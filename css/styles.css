@@ -13,10 +13,11 @@
 	--dairy: #fcfcfc;
 }
 
-html {
+body {
 	font-family: "Roboto", sans-serif;
 	color: var(--slate);
 	background-color: var(--white);
+	letter-spacing: 2%;
 }
 
 a {
@@ -26,6 +27,10 @@ a {
 ul,
 ol {
 	list-style-type: none;
+}
+
+.header {
+	border-bottom: 1px solid var(--cornflower);
 }
 
 .logo {
@@ -46,7 +51,7 @@ ol {
 	font-weight: 500;
 }
 
-.contacts-container .link {
+.contacts .link {
 	color: var(--slate);
 	font-weight: 400;
 	font-style: normal;
@@ -54,7 +59,6 @@ ol {
 
 .link {
 	font-size: 16px;
-	letter-spacing: 2%;
 }
 
 .link:hover,
@@ -69,11 +73,12 @@ ol {
 
 .hero .page-title {
 	text-align: center;
+	text-transform: capitalize;
 	color: var(--white);
 	font-size: 56px;
 	font-weight: 700;
 	line-height: 1.07;
-	letter-spacing: 2%;
+	width: 496px;
 }
 
 .button {
@@ -91,6 +96,17 @@ ol {
 	box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
 }
 
+.button--inactive {
+	background-color: var(--cloud);
+	color: var(--iris);
+	border: 1px solid var(--cornflower);
+}
+
+.button--inactive:hover,
+.button--inactive:focus {
+	background-color: var(--cornflower);
+}
+
 .button--active:hover,
 .button--active:focus {
 	background-color: var(--ocean);
@@ -98,4 +114,58 @@ ol {
 
 .hero .button {
 	padding: 16px 32px;
+}
+
+.section-title {
+	font-size: 36px;
+	text-align: center;
+	font-weight: 700;
+	text-transform: capitalize;
+	color: var(--navy-blue);
+}
+
+.list-item__title {
+	font-size: 20px;
+	font-weight: 500;
+	color: var(--navy-blue);
+}
+
+.list-item__text {
+	line-height: 1.5;
+}
+
+.section-team {
+	background-color: var(--cloud);
+}
+
+.section-team .list-item {
+	width: 264px;
+	text-align: center;
+	background-color: var(--white);
+	border-radius: 0 0 4px 4px;
+	box-shadow: 0 2px 1px 0px rgba(46, 47, 66, 0.08),
+		0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
+}
+
+.footer {
+	background-color: var(--navy-blue);
+	color: var(--cloud);
+	height: 312px;
+}
+
+.footer .logo {
+	color: var(--cloud);
+}
+
+.footer__content {
+	width: 264px;
+	line-height: 1.5;
+}
+
+.filters-container .button {
+	padding: 12px 26px;
+}
+
+.projects .list-item__text {
+	color: var(--slate);
 }
