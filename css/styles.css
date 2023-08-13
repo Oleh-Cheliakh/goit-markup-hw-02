@@ -153,16 +153,20 @@ body {
 
 .footer-container {
 	background-color: var(--navy-blue);
-	color: var(--cloud);
 }
 
 .footer-container .logo {
+	color: var(--iris);
+}
+
+.footer-container .logo-text-dark {
 	color: var(--cloud);
 }
 
 .footer-content {
 	line-height: 1.5;
 	letter-spacing: 0.02em;
+	color: var(--cloud);
 }
 
 .projects .list-item-text {
