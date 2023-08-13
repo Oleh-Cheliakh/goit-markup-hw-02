@@ -1,2 +1,2 @@
-**Semantic HTML layout of a web studio page**  
-[Open Page](https://oleh-cheliakh.github.io/goit-markup-hw-01)
+**Web Studio 2 Pages with styled text, links and buttons**  
+[Open Page](https://oleh-cheliakh.github.io/goit-markup-hw-02)
