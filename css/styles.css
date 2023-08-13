@@ -17,20 +17,14 @@ body {
 	font-family: "Roboto", sans-serif;
 	color: var(--slate);
 	background-color: var(--white);
-	letter-spacing: 2%;
 }
 
-a {
+.link {
 	text-decoration: none;
 }
 
-ul,
-ol {
-	list-style-type: none;
-}
-
-.header-container {
-	border-bottom: 1px solid var(--cornflower);
+.list {
+	list-style: none;
 }
 
 .logo {
@@ -38,37 +32,47 @@ ol {
 	text-transform: uppercase;
 	font-weight: 800;
 	font-size: 18px;
-	letter-spacing: 0.54px;
-	color: var(--navy-blue);
-}
-
-.logo-text-accent {
+	letter-spacing: 0.03em;
+	line-height: 1.17;
 	color: var(--iris);
 }
 
-.navigation-menu .link {
+.logo-text-dark {
 	color: var(--navy-blue);
-	font-weight: 500;
 }
 
-.contacts .link {
-	color: var(--slate);
+.navigation-link {
+	color: var(--navy-blue);
+	font-weight: 500;
+	font-size: 16px;
+	line-height: 1.5;
+	letter-spacing: 0.02em;
+}
+
+.navigation-link:hover,
+.navigation-link:focus {
+	color: var(--ocean);
+}
+
+.contacts {
 	font-weight: 400;
 	font-style: normal;
 }
 
-.link {
+.contacts-link {
 	font-size: 16px;
+	line-height: 1.5;
+	letter-spacing: 0.02em;
+	color: var(--slate);
 }
 
-.link:hover,
-.link:focus {
+.contacts-link:hover,
+.contacts-link:focus {
 	color: var(--ocean);
 }
 
 .hero {
 	background-color: var(--navy-blue);
-	height: 600px;
 }
 
 .hero .page-title {
@@ -78,42 +82,39 @@ ol {
 	font-size: 56px;
 	font-weight: 700;
 	line-height: 1.07;
-	width: 496px;
+	letter-spacing: 0.02em;
 }
 
 .button {
+	font-family: "Roboto", sans-serif;
 	font-size: 16px;
 	font-weight: 500;
-	letter-spacing: 4%;
-	border-radius: 4px;
+	letter-spacing: 0.04em;
 	cursor: pointer;
+	line-height: 1.5;
 }
 
-.button-active {
+.button-primary {
 	background-color: var(--iris);
 	color: var(--white);
 	border: none;
-	box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
 }
 
-.button-inactive {
+.button-secondary {
 	background-color: var(--cloud);
 	color: var(--iris);
 	border: 1px solid var(--cornflower);
 }
 
-.button-inactive:hover,
-.button-inactive:focus {
-	background-color: var(--cornflower);
-}
-
-.button-active:hover,
-.button-active:focus {
+.button-secondary:hover,
+.button-secondary:focus {
 	background-color: var(--ocean);
+	color: var(--white);
 }
 
-.hero .button {
-	padding: 16px 32px;
+.button-primary:hover,
+.button-primary:focus {
+	background-color: var(--ocean);
 }
 
 .section-title {
@@ -122,16 +123,23 @@ ol {
 	font-weight: 700;
 	text-transform: capitalize;
 	color: var(--navy-blue);
+	line-height: 1.11;
+	letter-spacing: 0.02em;
 }
 
 .list-item-title {
 	font-size: 20px;
 	font-weight: 500;
 	color: var(--navy-blue);
+	line-height: 1.2;
+	letter-spacing: 0.02em;
 }
 
 .list-item-text {
 	line-height: 1.5;
+	letter-spacing: 0.02em;
+	font-size: 16px;
+	color: var(--slate);
 }
 
 .section-team {
@@ -139,18 +147,13 @@ ol {
 }
 
 .section-team .list-item {
-	width: 264px;
 	text-align: center;
 	background-color: var(--white);
-	border-radius: 0 0 4px 4px;
-	box-shadow: 0 2px 1px 0px rgba(46, 47, 66, 0.08),
-		0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
 }
 
 .footer-container {
 	background-color: var(--navy-blue);
 	color: var(--cloud);
-	height: 312px;
 }
 
 .footer-container .logo {
@@ -158,12 +161,8 @@ ol {
 }
 
 .footer-content {
-	width: 264px;
 	line-height: 1.5;
-}
-
-.filters-container .button {
-	padding: 12px 26px;
+	letter-spacing: 0.02em;
 }
 
 .projects .list-item-text {
